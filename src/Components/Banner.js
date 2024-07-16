@@ -4,16 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import bannerimg from '../Assets/Logo.png'
 import searchicon from '../Assets/searchicon.png'
 
-// import { useSelector } from 'react-redux';
-
-// import Img from './lazyLoadImage';
 
 const Banner = () => {
    
     const [query, setQuery] = useState("");
     const [isActive,setIsActive] = useState(false)
     const navigate = useNavigate();
-    // const { url } = useSelector((state) => state.home)
+  
 
   const handleInput = () => {
    
@@ -44,8 +41,7 @@ const handleBlur = () => {
             </div>
             <div className='wrapper'>
                 <div className="heroBannerContent">
-                    {/* <span className="title">Welcome...</span>
-                    <span className="subTitle">Your Favourites Movies, TV Shows and Doscover...</span> */}
+                    
                     <div className="searchInput">
                         <input type="text" placeholder='Search movie or tv shows...' 
                         onChange={(e) => setQuery(e.target.value)} 

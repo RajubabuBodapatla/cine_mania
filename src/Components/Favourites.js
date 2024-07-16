@@ -1,4 +1,3 @@
-// src/components/Favourites.js
 
 import React ,{useState}from 'react';
 import { useSelector} from 'react-redux';
@@ -7,7 +6,7 @@ import Carousal from './carousal';
 import SwitchTab from './switching';
 
 const Favourites = () => {
-  // const dispatch = useDispatch();
+
   const data = useSelector((state) => state.favourites)
 
 
@@ -15,7 +14,7 @@ const Favourites = () => {
   
    
     const [endpoint, setEndpoint] = useState("movie");
-    // const { data, loading } = useFetch(`/${endpoint}/popular`);
+
 
     const onTabChange = (tab) => {
         setEndpoint(tab === "Movies" ? "movie" : "tv")
